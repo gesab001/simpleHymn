@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SimpleHymn</string>
+
+    <string-array name="titles_array">
+        <item>Praise to the Lord</item>
+        <item>God Himself is with Us</item>
+    </string-array>
+</resources>
