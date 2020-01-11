@@ -9,14 +9,18 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Filter;
+import android.widget.Filterable;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.List;
 
-public class HymnListAdapter extends RecyclerView.Adapter<HymnListAdapter.MyViewHolder> implements ItemMoveCallback.ItemTouchHelperContract {
-    private String[]mDataset;
+public class HymnListAdapter extends RecyclerView.Adapter<HymnListAdapter.MyViewHolder> implements ItemMoveCallback.ItemTouchHelperContract, Filterable {
+    private List<String> hymnListFiltered;
+    private List<String> hymnList;
     private Context context;
     private SharedPreferences pref;  // 0 - for private mode
     private SharedPreferences.Editor editor;
@@ -38,11 +42,11 @@ public class HymnListAdapter extends RecyclerView.Adapter<HymnListAdapter.MyView
     }
 
     // Provide a suitable constructor (depends on the kind of dataset)
-    public HymnListAdapter(String[] myDataset, Context context) {
+    public HymnListAdapter(List<String> hymnList, Context context) {
 
-        mDataset = myDataset;
+        this.hymnList = hymnList;
         this.context = context;
-    }
+        this.hymnListFiltered = hymnList;    }
 
     // Create new views (invoked by the layout manager)
     @Override
@@ -62,8 +66,8 @@ public class HymnListAdapter extends RecyclerView.Adapter<HymnListAdapter.MyView
         // - get element from your dataset at this position
         // - replace the contents of the view with that element
 
-                String title = mDataset[position];
-                holder.numberTextView.setText(Integer.toString(position+1));
+                String title = hymnListFiltered.get(position);
+                holder.numberTextView.setText(Integer.toString(hymnList.indexOf(title)+1));
                 holder.titleTextView.setText(title);
 
 
@@ -72,7 +76,7 @@ public class HymnListAdapter extends RecyclerView.Adapter<HymnListAdapter.MyView
     // Return the size of your dataset (invoked by the layout manager)
     @Override
     public int getItemCount() {
-        return mDataset.length;
+        return hymnListFiltered.size();
     }
 
     @Override
@@ -110,5 +114,46 @@ public class HymnListAdapter extends RecyclerView.Adapter<HymnListAdapter.MyView
     public void onRowClear(MyViewHolder myViewHolder) {
         myViewHolder.rowView.setBackgroundColor(Color.WHITE);
 
+    }
+
+    @Override
+    public Filter getFilter() {
+        return new Filter() {
+            @Override
+            protected FilterResults performFiltering(CharSequence charSequence) {
+                String charString = charSequence.toString();
+                FilterResults filterResults = new FilterResults();
+                if (charString.isEmpty()) {
+                    hymnListFiltered = hymnList;
+                } else {
+                    List<String> filteredList = new ArrayList<>();
+                    for (String row : hymnList) {
+
+                        // name match condition. this might differ depending on your requirement
+                        // here we are looking for name or phone number match
+                        Log.i("search", charString);
+
+                        if (row.toLowerCase().contains(charString.toLowerCase()) || Integer.parseInt(charString)==hymnList.indexOf(row)+1) {
+
+                            filteredList.add(row);
+                        }
+                    }
+
+                    hymnListFiltered = filteredList;
+                    Log.i("filtered", hymnListFiltered.toString());
+
+
+                }
+                filterResults.values = hymnListFiltered;
+                return filterResults;
+
+            }
+
+            @Override
+            protected void publishResults(CharSequence charSequence, FilterResults filterResults) {
+                hymnListFiltered = (List<String>) filterResults.values;
+                notifyDataSetChanged();
+            }
+        };
     }
 }
