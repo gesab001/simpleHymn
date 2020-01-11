@@ -133,7 +133,7 @@ public class HymnListAdapter extends RecyclerView.Adapter<HymnListAdapter.MyView
                         // here we are looking for name or phone number match
                         Log.i("search", charString);
 
-                        if (row.toLowerCase().contains(charString.toLowerCase()) || Integer.parseInt(charString)==hymnList.indexOf(row)+1) {
+                        if (row.toLowerCase().contains(charString.toLowerCase())) {
 
                             filteredList.add(row);
                         }
