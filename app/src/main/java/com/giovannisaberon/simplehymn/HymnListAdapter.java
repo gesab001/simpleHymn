@@ -2,6 +2,7 @@ package com.giovannisaberon.simplehymn;
 
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.support.v7.widget.RecyclerView;
@@ -19,12 +20,12 @@ import java.util.HashMap;
 import java.util.List;
 
 public class HymnListAdapter extends RecyclerView.Adapter<HymnListAdapter.MyViewHolder> implements ItemMoveCallback.ItemTouchHelperContract, Filterable {
-    private List<String> hymnListFiltered;
+    private static List<String> hymnListFiltered;
     private List<String> hymnList;
     private Context context;
     private SharedPreferences pref;  // 0 - for private mode
     private SharedPreferences.Editor editor;
-
+    private static HymnAdapterListener listener;
     // Provide a reference to the views for each data item
     // Complex data items may need more than one view per item, and
     // you provide access to all the views for a data item in a view holder
@@ -38,15 +39,27 @@ public class HymnListAdapter extends RecyclerView.Adapter<HymnListAdapter.MyView
             rowView = v;
             numberTextView =  v.findViewById(R.id.number);
             titleTextView = v.findViewById(R.id.title);
+
+            v.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    // send selected contact in callback
+                    listener.onHymnSelected(hymnListFiltered.get(getAdapterPosition()));
+                }
+            });
         }
     }
 
     // Provide a suitable constructor (depends on the kind of dataset)
-    public HymnListAdapter(List<String> hymnList, Context context) {
+    public HymnListAdapter(List<String> hymnList, Context context, HymnAdapterListener listener) {
 
         this.hymnList = hymnList;
         this.context = context;
-        this.hymnListFiltered = hymnList;    }
+        this.hymnListFiltered = hymnList;
+        this.listener = listener;
+
+
+    }
 
     // Create new views (invoked by the layout manager)
     @Override
@@ -107,6 +120,10 @@ public class HymnListAdapter extends RecyclerView.Adapter<HymnListAdapter.MyView
     @Override
     public void onRowSelected(MyViewHolder myViewHolder) {
         myViewHolder.rowView.setBackgroundColor(Color.GRAY);
+        int number = Integer.parseInt(myViewHolder.numberTextView.getText().toString());
+        Intent intent = new Intent();
+
+
 
     }
 
@@ -155,5 +172,9 @@ public class HymnListAdapter extends RecyclerView.Adapter<HymnListAdapter.MyView
                 notifyDataSetChanged();
             }
         };
+    }
+
+    public interface HymnAdapterListener {
+        void onHymnSelected(String hymnNumber);
     }
 }

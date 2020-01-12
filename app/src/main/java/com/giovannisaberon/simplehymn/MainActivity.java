@@ -2,6 +2,8 @@ package com.giovannisaberon.simplehymn;
 
 import android.app.SearchManager;
 import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -10,12 +12,13 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SearchView;
 import android.support.v7.widget.helper.ItemTouchHelper;
 import android.util.Log;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements HymnListAdapter.HymnAdapterListener {
 
     String[] dataset;
     private RecyclerView recyclerView;
@@ -23,6 +26,9 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView.LayoutManager layoutManager;
     List<String> hymnList;
     private SearchView searchView;
+    private SharedPreferences pref;  // 0 - for private mode
+    private SharedPreferences.Editor editor;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -70,11 +76,22 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
         });
-        mAdapter = new HymnListAdapter(hymnList, this);
+        mAdapter = new HymnListAdapter(hymnList, this, this);
         ItemTouchHelper.Callback callback = new ItemMoveCallback(mAdapter);
         ItemTouchHelper touchHelper = new ItemTouchHelper(callback);
         touchHelper.attachToRecyclerView(recyclerView);
         recyclerView.setAdapter(mAdapter);
+    }
+
+    @Override
+    public void onHymnSelected(String number) {
+        Toast.makeText(getApplicationContext(), "Selected: " + number, Toast.LENGTH_LONG).show();
+        pref = this.getApplicationContext().getSharedPreferences("MyPref", 0);
+        editor = pref.edit();
+        editor.putString("selectedHymn", number);
+        editor.commit();
+        Intent intent = new Intent(this, FullscreenActivity.class);
+        startActivity(intent);
     }
 
 
