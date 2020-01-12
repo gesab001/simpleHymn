@@ -6,25 +6,37 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.gson.internal.LinkedTreeMap;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
  * status bar and navigation/system bar) with user interaction.
  */
-public class FullscreenActivity extends AppCompatActivity {
+public class FullscreenActivity extends AppCompatActivity{
     /**
      * Whether or not the system UI should be auto-hidden after
      * {@link #AUTO_HIDE_DELAY_MILLIS} milliseconds.
      */
-
+    int verseCount = -1;
+    List<String> verseItem;
+    String verseTitle;
     private SharedPreferences pref;  // 0 - for private mode
     private SharedPreferences.Editor editor;
-
+    private OnSwipeTouchListener onSwipeTouchListener;
     private static final boolean AUTO_HIDE = true;
-
+    HymnJson hymnJson;
+    HashMap<String, ArrayList<List>> hashMapHymns;
     /**
      * If {@link #AUTO_HIDE} is set, the number of milliseconds to wait after
      * user interaction before hiding the system UI.
@@ -95,21 +107,80 @@ public class FullscreenActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_fullscreen);
 
+        hymnJson = new HymnJson(this);
+        try {
+            hashMapHymns = hymnJson.convertToHashmap("hymns.json");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         mVisible = true;
         mControlsView = findViewById(R.id.fullscreen_content_controls);
         mContentView = findViewById(R.id.fullscreen_content);
         pref = getApplicationContext().getSharedPreferences("MyPref", 0);
-        String number = pref.getString("selectedHymn", null);
-        TextView textView = (TextView) mContentView;
-        textView.setText(number);
+        final int number = pref.getInt("selectedHymnNumber", 0);
+        final String title = pref.getString("selectedHymnTitle", null);
+        final TextView textView = (TextView) mContentView;
+        textView.setText(Integer.toString(number) + "\n" + title);
+        final ArrayList<List> versesList = hashMapHymns.get(Integer.toString(number));
 
-        // Set up the user interaction to manually show or hide the system UI.
-        mContentView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+
+        mContentView.setOnTouchListener(new OnSwipeTouchListener(FullscreenActivity.this) {
+            public void onSwipeTop() {
+                Toast.makeText(FullscreenActivity.this, "top", Toast.LENGTH_SHORT).show();
+                toggle();
+
+            }
+            public void onSwipeRight() {
+                verseCount = verseCount - 1;
+                Toast.makeText(FullscreenActivity.this, Integer.toString(verseCount), Toast.LENGTH_SHORT).show();
+
+                Log.i("verseCount", Integer.toString(verseCount));
+                verseItem = versesList.get(verseCount);
+                verseTitle = verseItem.get(0);
+                String text = verseTitle + "\n\n ";
+                String verseLyrics;
+                for (int i=1; i<verseItem.size(); i++){
+                    verseLyrics = verseItem.get(i) + "\n";
+                    text+= verseLyrics;
+                }
+                textView.setText(text);
+
+
+
+            }
+            public void onSwipeLeft() {
+                verseCount = verseCount + 1;
+                Toast.makeText(FullscreenActivity.this, Integer.toString(verseCount), Toast.LENGTH_SHORT).show();
+                verseItem = versesList.get(verseCount);
+                verseTitle = verseItem.get(0);
+                String text = verseTitle + "\n\n ";
+                String verseLyrics;
+                for (int i=1; i<verseItem.size(); i++){
+                    verseLyrics = verseItem.get(i) + "\n";
+                    text+= verseLyrics;
+                }
+
+                textView.setText(text);
+
+
+
+
+
+
+            }
+            public void onSwipeBottom() {
+                Toast.makeText(FullscreenActivity.this, "bottom", Toast.LENGTH_SHORT).show();
                 toggle();
             }
+
         });
+        // Set up the user interaction to manually show or hide the system UI.
+//        mContentView.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                toggle();
+//            }
+//        });
 
         // Upon interacting with UI controls, delay any scheduled hide()
         // operations to prevent the jarring behavior of controls going away

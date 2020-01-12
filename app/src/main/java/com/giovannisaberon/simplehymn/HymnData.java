@@ -3,12 +3,11 @@ package com.giovannisaberon.simplehymn;
 public class HymnData {
     private int number;
     private String title;
-    private String[] verses;
+//    private String[] verses;
 
-    public HymnData(int number, String title, String[] verses){
+    public HymnData(int number, String title){
         this.number= number;
         this.title = title;
-        this.verses = verses;
     }
 
     public int getNumber(){
@@ -17,10 +16,6 @@ public class HymnData {
 
     public String getTitle(){
         return this.title;
-    }
-
-    public String[] getVerses(){
-        return this.verses;
     }
 
 }

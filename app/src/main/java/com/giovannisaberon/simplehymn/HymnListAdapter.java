@@ -44,7 +44,10 @@ public class HymnListAdapter extends RecyclerView.Adapter<HymnListAdapter.MyView
                 @Override
                 public void onClick(View view) {
                     // send selected contact in callback
-                    listener.onHymnSelected(hymnListFiltered.get(getAdapterPosition()));
+                    int number = getAdapterPosition()+1;
+                    String title = hymnListFiltered.get(getAdapterPosition());
+                    HymnData hymndata = new HymnData(number, title);
+                    listener.onHymnSelected(hymndata);
                 }
             });
         }
@@ -175,6 +178,6 @@ public class HymnListAdapter extends RecyclerView.Adapter<HymnListAdapter.MyView
     }
 
     public interface HymnAdapterListener {
-        void onHymnSelected(String hymnNumber);
+        void onHymnSelected(HymnData hymndata);
     }
 }

@@ -17,6 +17,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 public class HymnJson {
 
@@ -45,11 +46,11 @@ public class HymnJson {
         return json;
     }
 
-    public HashMap<String, LinkedTreeMap<Object,Object>> convertToHashmap() throws IOException {
-        InputStream is = context.getAssets().open("hymns.json");
+    public HashMap<String, ArrayList<List>> convertToHashmap(String filename) throws IOException {
+        InputStream is = context.getAssets().open(filename);
         JsonReader reader = new JsonReader(new InputStreamReader(is));
         final Gson gson = new Gson();
-        HashMap<String, LinkedTreeMap<Object,Object>> map = gson.fromJson(reader, HashMap.class);
+        HashMap<String, ArrayList<List>> map = gson.fromJson(reader, HashMap.class);
         return map;
     }
 

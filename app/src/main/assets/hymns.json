@@ -1,3 +1,11 @@
-{"1" : {"title": "Praise to the Lord", "verse 1": [], "verse 2": [], "refrain": [], "verse 4": []},
- "2" : {"title": "God Himself is with us", "verse 1": [], "verse 2": [], "refrain": [], "verse 4": []}
+{"1": [["Verse 1", "Praise to the Lord", "The Almighty the King of Creation", "Oh my soul, praise Him", "for he is thy King of salvation", "All ye who hear, come to His temple, draw near"],
+       ["Refrain", "Jesus is Christ"],
+       ["Verse 2","Amen"],
+       ["Verse 3", "I surrender"]
+      ],
+ "2": [["Verse 1", ["God Himself is with us", "Let us all adore Him", "And with awe appear before Him"]],
+  ["Refrain", ["Jesus is Christ"]],
+  ["Verse 2", ["Amen"]],
+  ["Verse 3", ["I surrender"]]
+ ]
 }

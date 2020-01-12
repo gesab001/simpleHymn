@@ -84,11 +84,12 @@ public class MainActivity extends AppCompatActivity implements HymnListAdapter.H
     }
 
     @Override
-    public void onHymnSelected(String number) {
-        Toast.makeText(getApplicationContext(), "Selected: " + number, Toast.LENGTH_LONG).show();
+    public void onHymnSelected(HymnData hymnData) {
+        Toast.makeText(getApplicationContext(), "Selected: " + hymnData.getNumber(), Toast.LENGTH_LONG).show();
         pref = this.getApplicationContext().getSharedPreferences("MyPref", 0);
         editor = pref.edit();
-        editor.putString("selectedHymn", number);
+        editor.putInt("selectedHymnNumber", hymnData.getNumber());
+        editor.putString("selectedHymnTitle", hymnData.getTitle());
         editor.commit();
         Intent intent = new Intent(this, FullscreenActivity.class);
         startActivity(intent);
