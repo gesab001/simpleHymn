@@ -3,7 +3,701 @@
 
     <string-array name="titles_array">
         <item>Praise to the Lord</item>
-        <item>God Himself is with Us</item>
+        <item>All Creatures of Our God and King</item>
+        <item>God Himself Is With Us</item>
+        <item>Praise, My Soul, the King of Heaven</item>
+        <item>All My Hope on God Is Founded</item>
+        <item>O Worship the Lord</item>
+        <item>The Lord in Zion Reigneth</item>
+        <item>We Gather Together</item>
+        <item>Let All the World in Every Corner Sing</item>
+        <item>Come, Christians, Join to Sing</item>
+        <item>The God of Abraham Praise</item>
+        <item>Joyful, Joyful, We Adore Thee</item>
+        <item>New Songs of Celebration Render</item>
+        <item>Let Us Praise the Name of the Lord</item>
+        <item>My Maker and My King</item>
+        <item>All People That on Earth Do Dwell</item>
+        <item>Lord of All Being, Throned Afar</item>
+        <item>O Morning Star, How Fair and Bright</item>
+        <item>O Sing a New Song to the Lord</item>
+        <item>O Praise Ye the Lord</item>
+        <item>Immortal, Invisible, God Only Wise</item>
+        <item>God Is Our Song</item>
+        <item>Now the Joyful Bells A-Ringing</item>
+        <item>Every Star Shall Sing a Carol</item>
+        <item>Praise the Lord, His Glories Show</item>
+        <item>Praise the Lord! You Heavens Adore Him</item>
+        <item>Rejoice, Ye Pure in Heart!</item>
+        <item>Praise We the Lord</item>
+        <item>Sing Praise to God</item>
+        <item>Holy God, We Praise Your Name</item>
+        <item>Tell Out, my Soul</item>
+        <item>When in Our Music God Is Glorified</item>
+        <item>Sing A New Song to the Lord</item>
+        <item>Wake the Song</item>
+        <item>With Songs and Honors</item>
+        <item>O Thou in Whose Presence</item>
+        <item>O Sing My Soul, Your Maker\'s Praise</item>
+        <item>Arise, My Soul, Arise!</item>
+        <item>Lord In the Morning</item>
+        <item>The Dawn of God\'s Dear Sabbath</item>
+        <item>O Splendor of God\'s Glory Bright</item>
+        <item>Now That the Daylight Fills the Sky</item>
+        <item>When Morning Gilds the Skies</item>
+        <item>Morning Has Broken</item>
+        <item>Open Now Thy Gates of Beauty</item>
+        <item>Abide With Me, \'Tis Eventide</item>
+        <item>God, Who Made the Earth and Heaven</item>
+        <item>Softly Now the Light of Day</item>
+        <item>Savior, Breathe an Evening Blessing</item>
+        <item>Abide With Me</item>
+        <item>Day Is Dying in the West</item>
+        <item>Now the Day Is Over</item>
+        <item>All Praise to Thee</item>
+        <item>O Gladsome Light</item>
+        <item>Jesus, Tender Shepherd, Hear Me</item>
+        <item>The Day Thou Gavest</item>
+        <item>Now All the Woods Are Sleeping</item>
+        <item>Hark, the Vesper Hymn Is Stealing</item>
+        <item>Great Our Joy as Now We Gather</item>
+        <item>Blessed Jesus, at Thy Word</item>
+        <item>God Is Here!</item>
+        <item>How Lovely Is Thy Dwelling Place</item>
+        <item>O Come, Let Us Sing to the Lord</item>
+        <item>Lord, Dismiss Us With Thy Blessing</item>
+        <item>God Be With You</item>
+        <item>God Be With You</item>
+        <item>O Lord, Now Let Your Servant</item>
+        <item>On Our Way Rejoicing</item>
+        <item>Lord, Make Us More Holy</item>
+        <item>Praise Ye the Father</item>
+        <item>Come Thou Almighty King</item>
+        <item>Creator of the Stars of Night</item>
+        <item>Holy, Holy, Holy</item>
+        <item>Like a River Glorious</item>
+        <item>The Wonder of It All</item>
+        <item>O Love That Wilt Not Let Me Go</item>
+        <item>O Love of God Most Full</item>
+        <item>For God So Loved Us</item>
+        <item>O Love of God, How Strong and True</item>
+        <item>O World of God</item>
+        <item>Though I Speak With Tongues</item>
+        <item>Before Jehovah\'s Awful Throne</item>
+        <item>O Worship the King</item>
+        <item>God the Omnipotent</item>
+        <item>Eternal Father Strong to Save</item>
+        <item>How Great Thou Art</item>
+        <item>God Who Spoke in the Beginning</item>
+        <item>I Sing the Mighty Power of God</item>
+        <item>Let All on Earth Their Voices Raise</item>
+        <item>Eternal God, Whose Power Upholds</item>
+        <item>Ye Watchers and Ye Holy Ones</item>
+        <item>This is My Father\'s World</item>
+        <item>All Things Bright and Beautiful</item>
+        <item>Nature With Open Volume Stands</item>
+        <item>Spring Has Now Unwrapped the Flowers</item>
+        <item>The Spacious Firmament</item>
+        <item>Lord of the Boundless Curves of Space</item>
+        <item>Can You Count the Stars?</item>
+        <item>God Will Take Care of You</item>
+        <item>Great Is Thy Faithfulness</item>
+        <item>Children of the Heavenly Father</item>
+        <item>Unto the Hills</item>
+        <item>O God, Our Help</item>
+        <item>My Shepherd Will Supply My Need</item>
+        <item>Sing to the Great Jehovah\'s Praise</item>
+        <item>Give to Our God Immortal Praise</item>
+        <item>God Moves in a Mysterious Way</item>
+        <item>Amazing Grace</item>
+        <item>Marvelous Grace</item>
+        <item>God\'s Free Mercy Streameth</item>
+        <item>It Took a Miracle</item>
+        <item>Let Us With a Gladsome Mind</item>
+        <item>As Pants the Hart</item>
+        <item>There\'s a Wideness</item>
+        <item>O Come, O Come, Immanuel</item>
+        <item>Of the Father\'s Love Begotten</item>
+        <item>The Advent of Our God</item>
+        <item>The First Noel</item>
+        <item>Angels From the Realms of Glory</item>
+        <item>There\'s a Song in the Air</item>
+        <item>Go, Tell It on the Mountain</item>
+        <item>Hark! the Herald Angels Sing</item>
+        <item>As With Gladness Men of Old</item>
+        <item>Away in a Manger</item>
+        <item>Joy to the World</item>
+        <item>In the Bleak Midwinter</item>
+        <item>Infant Holy, Infant Lowly</item>
+        <item>Break Forth, O Beauteous Heavenly Light</item>
+        <item>As It Fell Upon a Night</item>
+        <item>It Came Upon the Midnight Clear</item>
+        <item>Lo, How a Rose E\'er Blooming</item>
+        <item>O Come, All Ye Faithful</item>
+        <item>Now Is Born the Divine Christ Child</item>
+        <item>O Jesus Sweet</item>
+        <item>O Little Town of Bethlehem</item>
+        <item>Good Christians, Now Rejoice</item>
+        <item>We Three Kings</item>
+        <item>Rise Up, Shepherd, and Follow</item>
+        <item>While Shepherds Watched Their Flocks</item>
+        <item>Thou Didst Leave Thy Throne</item>
+        <item>What Child Is This?</item>
+        <item>Angels We Have Heard on High</item>
+        <item>Silent Night, Holy Night</item>
+        <item>O Sing a Song of Bethlehem</item>
+        <item>Songs of Thankfulness and Praise</item>
+        <item>I Think When I Read That Sweet Story</item>
+        <item>Christ Upon the Mountain Peak</item>
+        <item>O Love, How Deep, How Broad</item>
+        <item>Once in Royal David\'s City</item>
+        <item>Who Is He in Yonder Stall?</item>
+        <item>Jesus Walked This Lonesome Valley</item>
+        <item>Tell Me the Story of Jesus</item>
+        <item>Prince of Peace, Control My Will</item>
+        <item>When I Survey the Wondrous Cross</item>
+        <item>When I Survey the Wondrous Cross</item>
+        <item>O Sacred Head Now Wounded</item>
+        <item>Go to Dark Gethsemane</item>
+        <item>Were You There?</item>
+        <item>The Old Rugged Cross</item>
+        <item>Ride On in Majesty</item>
+        <item>Throned Upon the Awful Tree</item>
+        <item>Wondrous Love</item>
+        <item>At the Cross</item>
+        <item>There Is a Green Hill Far Away</item>
+        <item>Look, You Saints! the Sight Is Glorious</item>
+        <item>Christ the Lord Is Risen Today</item>
+        <item>Alleluia! Sing to Jesus!</item>
+        <item>And Have the Bright Immensities</item>
+        <item>Come, You Faithful</item>
+        <item>Come, You Faithful</item>
+        <item>Thine Is the Glory</item>
+        <item>The Strife Is O\'er</item>
+        <item>Good Christian Friends, Rejoice!</item>
+        <item>Star of Our Hope</item>
+        <item>Now the Green Blade Rises</item>
+        <item>Hail the Day That Sees Him Rise</item>
+        <item>Jesus, Your Blood and Righteousness</item>
+        <item>The Unveiled Christ</item>
+        <item>The Wonders of Redeeming Love</item>
+        <item>O Listen to Our Wondrous Story</item>
+        <item>Does Jesus Care?</item>
+        <item>Christ Is Alive</item>
+        <item>I Will Sing of Jesus\' Love</item>
+        <item>Jesus Paid It All</item>
+        <item>Jesus Is All the World to Me</item>
+        <item>I\'ve Found a Friend</item>
+        <item>Jesus, What a Friend for Sinners</item>
+        <item>My Song Is Love Unknown</item>
+        <item>All That Thrills My Soul</item>
+        <item>Jesus Loves Me</item>
+        <item>Love Divine</item>
+        <item>O Shepherd Divine</item>
+        <item>Savior, Teach Me</item>
+        <item>Sing We of the Modern City</item>
+        <item>Showers of Blessing</item>
+        <item>Tell Me the Old, Old Story</item>
+        <item>The King of Love My Shepherd Is</item>
+        <item>And Can It Be?</item>
+        <item>The Head That Once Was Crowned</item>
+        <item>The Lord Is Coming</item>
+        <item>Christ Is Coming</item>
+        <item>Hail Him the King of Glory</item>
+        <item>This Is the Threefold Truth</item>
+        <item>Come, Thou Long Expected Jesus</item>
+        <item>Gleams of the Golden Morning</item>
+        <item>Face to Face</item>
+        <item>It May Be at Morn</item>
+        <item>There\'ll Be No Dark Valley</item>
+        <item>That Glorious Day Is Coming</item>
+        <item>Wake, Awake, for Night Is Flying</item>
+        <item>Lo! He Comes</item>
+        <item>Tis Almost Time for the Lord to Come</item>
+        <item>Jesus Is Coming Again</item>
+        <item>We Have This Hope</item>
+        <item>The King Shall Come</item>
+        <item>When the Roll Is Called Up Yonder</item>
+        <item>The Church Has Waited Long</item>
+        <item>When He Cometh</item>
+        <item>When Jesus Comes in Glory</item>
+        <item>When He Comes</item>
+        <item>Rejoice, the Lord Is King</item>
+        <item>Hark! Ten Thousand Harps and Voices</item>
+        <item>Crown Him With Many Crowns</item>
+        <item>Seek Ye First the Kingdom</item>
+        <item>God Is Working His Purpose Out</item>
+        <item>Lift Up Your Heads</item>
+        <item>Jesus Shall Reign</item>
+        <item>A Hymn of Glory Let Us Sing</item>
+        <item>All Hail the Power of Jesus\' Name</item>
+        <item>All Glory, Laud, and Honor</item>
+        <item>Blest Be the King</item>
+        <item>At the Name of Jesus</item>
+        <item>Christ, Whose Glory Fills the Skies</item>
+        <item>Christ Is the World\'s Light</item>
+        <item>Christ Is Made the Sure Foundation</item>
+        <item>I Love Thee</item>
+        <item>In Cross of Christ I Glory</item>
+        <item>How Sweet the Name!</item>
+        <item>Jesus, Priceless Treasure</item>
+        <item>Fairest Lord Jesus</item>
+        <item>Jesus, the Very Thought of Thee</item>
+        <item>Jesus, Thou Joy of Loving Hearts</item>
+        <item>King of Glory, King of Peace</item>
+        <item>My Song Shall Be of Jesus</item>
+        <item>More About Jesus</item>
+        <item>Worthy, Worthy is the Lamb</item>
+        <item>Come, My Way</item>
+        <item>O, How I Love Jesus</item>
+        <item>Praise Him! Praise Him!</item>
+        <item>O For a Thousand Tongues to Sing</item>
+        <item>He Lives</item>
+        <item>Come, Let Us Sing</item>
+        <item>There\'s No Other Name Like Jesus</item>
+        <item>The Great Physician Now Is Near</item>
+        <item>I Cannot Tell Why</item>
+        <item>Ye Servants of God</item>
+        <item>Come Down, O Love Divine</item>
+        <item>Baptize Us Anew</item>
+        <item>Draw Us in the Spirit\'s Tether</item>
+        <item>Hover O\'er Me, Holy Spirit</item>
+        <item>The Spirit of the Lord Revealed</item>
+        <item>Sweet, Sweet Spirit</item>
+        <item>Fire of God, Thou Sacred Flame</item>
+        <item>O for That Flame of Living Fire</item>
+        <item>Breathe on Me, Breath of God</item>
+        <item>Spirit of God</item>
+        <item>Spirit Divine</item>
+        <item>Holy Spirit, Light Divine</item>
+        <item>Come, Holy Spirit</item>
+        <item>O Holy Dove of God Descending</item>
+        <item>Break Thou the Bread of Life</item>
+        <item>Give Me the Bible</item>
+        <item>Lord, I Have Made Thy Word My Choice</item>
+        <item>O Word of God Incarnate</item>
+        <item>O God of Light</item>
+        <item>Thanks to God</item>
+        <item>For Your Holy Book We Thank You</item>
+        <item>Lord Jesus, Once You Spoke to Men</item>
+        <item>Only Trust Him</item>
+        <item>Come, Ye Sinners</item>
+        <item>I Gave My Life for Thee</item>
+        <item>I Hear Thy Welcome Voice</item>
+        <item>O Jesus, Thou Art Standing</item>
+        <item>For You I Am Praying</item>
+        <item>Jesus Calls Us</item>
+        <item>Wonderful Words of Life</item>
+        <item>Softly and Tenderly</item>
+        <item>I Am Going to Calvary</item>
+        <item>The Savior Is Waiting</item>
+        <item>Turn Your Eyes Upon Jesus</item>
+        <item>We Have Not Known Thee</item>
+        <item>Jesus, I Come</item>
+        <item>Heavenly Father, Bless Us Now</item>
+        <item>Power in the Blood</item>
+        <item>Chief of Sinners</item>
+        <item>Lord, I\'m Coming Home</item>
+        <item>God Be Merciful to Me</item>
+        <item>I Lay My Sins on Jesus</item>
+        <item>Forgive Our Sins as We Forgive</item>
+        <item>Rock of Ages</item>
+        <item>Nearer, Still Nearer</item>
+        <item>Deeper Yet</item>
+        <item>Beneath the Cross of Jesus</item>
+        <item>Faith of Our Fathers</item>
+        <item>Give Me Jesus</item>
+        <item>Draw Me Nearer</item>
+        <item>I Am Coming to the Cross</item>
+        <item>Wholly Thine</item>
+        <item>I Surrender All</item>
+        <item>I Would Draw Nearer to Jesus</item>
+        <item>I Would Be Like Jesus</item>
+        <item>Near the Cross</item>
+        <item>Just as I Am</item>
+        <item>Just as I Am</item>
+        <item>O for a Closer Walk</item>
+        <item>Live Out Thy Life Within Me</item>
+        <item>Lead Me to Calvary</item>
+        <item>Whiter Than Snow</item>
+        <item>Lord, I Want to Be a Christian</item>
+        <item>Lord of Creation</item>
+        <item>My Jesus, I Love Thee</item>
+        <item>Nothing Between</item>
+        <item>O for a Heart to Praise My God!</item>
+        <item>Just as I Am, Thine Own to Be</item>
+        <item>Jesus, I My Cross Have Taken</item>
+        <item>Open My Eyes That I May See</item>
+        <item>I\'d Rather Have Jesus</item>
+        <item>Must Jesus Bear the Cross Alone</item>
+        <item>Take the World, but Give Me Jesus</item>
+        <item>Take My Life and Let It Be</item>
+        <item>O Jesus, I Have Promised</item>
+        <item>The Cleansing Wave</item>
+        <item>On Jordan\'s Banks the Baptist\'s Cry</item>
+        <item>Come, Thou Fount of Every Blessing</item>
+        <item>What a Wonderful Savior</item>
+        <item>There Is a Fountain</item>
+        <item>Redeemed!</item>
+        <item>Redeemed!</item>
+        <item>God Is My Strong Salvation</item>
+        <item>Jesus Saves</item>
+        <item>To God Be the Glory</item>
+        <item>Is This a Day of New Beginning?</item>
+        <item>I Will Sing of My Redeemer</item>
+        <item>I Love Your Kingdom, Lord</item>
+        <item>Christ Is the World\'s True Light</item>
+        <item>Lord, Who Dost Thou Give to Thy Church</item>
+        <item>Built on the Rock</item>
+        <item>The Church Has One Foundation</item>
+        <item>God Is Love</item>
+        <item>Blest Be the Tie That Binds</item>
+        <item>Thy Hand, O God Has Guided</item>
+        <item>This Is My Will</item>
+        <item>Father, Help Your People</item>
+        <item>Thy Love, O God</item>
+        <item>Where Cross the Crowded Ways of Life</item>
+        <item>All Who Love and Serve Your City</item>
+        <item>Come, Labor On</item>
+        <item>Far and Near the Fields Are Teeming</item>
+        <item>Hark! the Voice of Jesus Calling</item>
+        <item>From the Eastern Mountains</item>
+        <item>Hark! \'Tis the Shepherd\'s Voice I Hear</item>
+        <item>Lift High the Cross</item>
+        <item>Lord, Whose Love in Humble Service</item>
+        <item>O Jesus Christ, to You</item>
+        <item>O Zion, Haste</item>
+        <item>O Where Are the Reapers?</item>
+        <item>Rescue the Perishing</item>
+        <item>Watchman, Blow the Gospel Trumpet</item>
+        <item>Bringing in the Sheaves</item>
+        <item>Christ for the World</item>
+        <item>Lift Him Up</item>
+        <item>How Beauteous Are Their Feet</item>
+        <item>Seeking the Lost</item>
+        <item>Jesus, With Thy Church Abide</item>
+        <item>Work, for the Night Is Coming</item>
+        <item>All Things Are Thine</item>
+        <item>Go Forth, Go Forth With Christ</item>
+        <item>Go, Preach My Gospel</item>
+        <item>We Give This Child to You</item>
+        <item>Welcome, Day of Sweet Repose</item>
+        <item>Holy Sabbath Day of Rest</item>
+        <item>O Day of Rest and Gladness</item>
+        <item>O Day of Rest and Gladness</item>
+        <item>Safely Through Another Week</item>
+        <item>Crowning Jewel of Creation</item>
+        <item>The Sacred Anthem</item>
+        <item>Come, O Sabbath Day</item>
+        <item>Don\'t Forget the Sabbath</item>
+        <item>Light of Light, Enlighten Me</item>
+        <item>We Love thy Sabbath, Lord</item>
+        <item>Welcome, Welcome, Day of Rest</item>
+        <item>Dear Lord, We Come at Set of Sun</item>
+        <item>Lord of the Sabbath</item>
+        <item>Far From All Care</item>
+        <item>As Birds Unto the Genial Homeland</item>
+        <item>Lord God, Your Love Has Called Us Here</item>
+        <item>An Upper Room</item>
+        <item>Bread of the World</item>
+        <item>Beneath the Forms of Outward Rite</item>
+        <item>I Come With Joy</item>
+        <item>In Imitation, Lord of Thee</item>
+        <item>By Christ Redeemed</item>
+        <item>Let Us Break Bread Together</item>
+        <item>Now Let Us From This Table Rise</item>
+        <item>O God, Unseen, Yet Ever Near</item>
+        <item>Love Consecrates the Humblest Act</item>
+        <item>Sent Forth by God\'s Blessing</item>
+        <item>Lord, Enthroned in Heavenly Splendor</item>
+        <item>Jesus Invites His Saints</item>
+        <item>Thy Broken Body, Gracious Lord</item>
+        <item>The Son of God Proclaim</item>
+        <item>Cover With His Life</item>
+        <item>God Has Spoken by His Prophets</item>
+        <item>Fruitful Trees, the Spirit\'s Sowing</item>
+        <item>Christ the Lord, All Power Possessing</item>
+        <item>The Judgment Has Set</item>
+        <item>O Solemn Thought</item>
+        <item>Day of Judgment, Day of Wonders!</item>
+        <item>Soon Shall the Trump of God</item>
+        <item>Jerusalem, My Happy Home</item>
+        <item>For All the Saints</item>
+        <item>Marching to Zion</item>
+        <item>Glorious Things of Thee Are Spoken</item>
+        <item>For Thee, O Dear, Dear Country</item>
+        <item>Holy, Holy, Is What the Angels Sing</item>
+        <item>I Shall See the King</item>
+        <item>No Night There</item>
+        <item>Sweet By and By</item>
+        <item>Jerusalem the Golden</item>
+        <item>Joy By and By</item>
+        <item>Over Yonder</item>
+        <item>Shall We Gather at the River</item>
+        <item>Ten Thousand Times Ten Thousand</item>
+        <item>We Speak of the Realms</item>
+        <item>The Glory Song</item>
+        <item>The Homeland</item>
+        <item>I\'m Going Home</item>
+        <item>You Will See Your Lord A-Coming</item>
+        <item>How Far From Home?</item>
+        <item>How Cheering Is the Christian\'s Hope</item>
+        <item>I Saw One Weary</item>
+        <item>How Sweet Are the Tidings</item>
+        <item>There\'ll Be No Sorrow There</item>
+        <item>I\'m a Pilgrim</item>
+        <item>I\'m But a Stranger Here</item>
+        <item>Lo, What a Glorious Sight Appears</item>
+        <item>Long Upon the Mountains</item>
+        <item>O, When Shall I See Jesus</item>
+        <item>Never Part Again</item>
+        <item>Beautiful Zion</item>
+        <item>Together Let Us Sweetly Live</item>
+        <item>What Heavenly Music</item>
+        <item>We Have Heard</item>
+        <item>Don\'t You See My Jesus Coming</item>
+        <item>Immortal Love, Forever Full</item>
+        <item>My Lord and I</item>
+        <item>I Love to Tell the Story</item>
+        <item>More Love to Thee</item>
+        <item>As the Bridegroom to His Chosen</item>
+        <item>As Water to the Thirsty</item>
+        <item>Be Still, My Soul</item>
+        <item>Blessed Assurance, Jesus is Mine</item>
+        <item>Peace, Perfect Peace</item>
+        <item>When I Can Read My Title Clear</item>
+        <item>I Heard the Voice of Jesus</item>
+        <item>Wonderful Peace</item>
+        <item>Life Is Great! So Sing About It</item>
+        <item>A Child of the King</item>
+        <item>Leaning On the Everlasting Arms</item>
+        <item>There\'s Sunshine in My Soul Today</item>
+        <item>Grant Us Your Peace</item>
+        <item>A Song of Heaven and Homeland</item>
+        <item>Nearer My God, to Thee</item>
+        <item>Take the Name of Jesus With You</item>
+        <item>Balm in Gilead</item>
+        <item>Burdens Are Lifted at Calvary</item>
+        <item>Come, Ye Disconsolate</item>
+        <item>Sweet Hour of Prayer</item>
+        <item>Tread Softly</item>
+        <item>Dear Lord and Father</item>
+        <item>Dear Lord and Father</item>
+        <item>Father, Lead Me Day by Day</item>
+        <item>I Need Thee Every Hour</item>
+        <item>I Need Thee, Precious Jesus</item>
+        <item>I Must Tell Jesus</item>
+        <item>I Do Believe</item>
+        <item>In the Garden</item>
+        <item>At First I Prayed for Light</item>
+        <item>Jesus, Lover of My Soul</item>
+        <item>Jesus, Lover of My Soul</item>
+        <item>In the Hour of Trial</item>
+        <item>Like Jesus</item>
+        <item>Fill My Cup, Lord</item>
+        <item>We Would See Jesus</item>
+        <item>Near to the Heart of God</item>
+        <item>Eternal Love, We Have No Good</item>
+        <item>O Gracious Father of Mankind</item>
+        <item>Still, Still With Thee</item>
+        <item>What a Friend We Have in Jesus</item>
+        <item>Take Time to Be Holy</item>
+        <item>Tis the Blessed Hour of Prayer</item>
+        <item>Sun of My Soul</item>
+        <item>A Quiet Place</item>
+        <item>Lord Jesus, Think on Me</item>
+        <item>I Need the Prayers</item>
+        <item>A Mighty Fortress</item>
+        <item>Moment by Moment</item>
+        <item>Anywhere With Jesus</item>
+        <item>How Firm a Foundation</item>
+        <item>If You But Trust in God to Guide You</item>
+        <item>I Know Whom I Have Believed</item>
+        <item>Just When I Need Him Most</item>
+        <item>In Heavenly Love Abiding</item>
+        <item>Lord of Our Life</item>
+        <item>The Lord Is My Light</item>
+        <item>All the Way</item>
+        <item>My Faith Looks Up to Thee</item>
+        <item>Standing on the Promises</item>
+        <item>Give to the Winds Your Fears</item>
+        <item>He Hideth My Soul</item>
+        <item>Depth of Mercy</item>
+        <item>My Hope is Built on Nothing Less</item>
+        <item>My Faith Has Found a Resting Place</item>
+        <item>Tis So Sweet To Trust in Jesus</item>
+        <item>Hiding in Thee</item>
+        <item>Because He Lives</item>
+        <item>From Every Stormy Wind</item>
+        <item>A Shelter in the Time of Storm</item>
+        <item>Under His Wings</item>
+        <item>It Is Well With My Soul</item>
+        <item>We\'ll Build on the Rock</item>
+        <item>Day by Day</item>
+        <item>O for a Faith</item>
+        <item>Will Your Anchor Hold?</item>
+        <item>I Am Trusting Thee, Lord Jesus</item>
+        <item>God, Who Stretched</item>
+        <item>He Leadeth Me</item>
+        <item>Guide Me, O Thou Great Jehovah</item>
+        <item>I Will Early Seek the Savior</item>
+        <item>Gentle Jesus, Meek and Mild</item>
+        <item>Lord, Speak to Me</item>
+        <item>Jesus, Friend So Kind</item>
+        <item>Jesus, Friend of Little Children</item>
+        <item>Jesus, Son of Blessed Mary</item>
+        <item>Savior, Like a Shepherd</item>
+        <item>The Lord\'s My Shepherd</item>
+        <item>Be Thou My Vision</item>
+        <item>Now Praise the Hidden God of Love</item>
+        <item>Loving Shepherd of Thy Sheep</item>
+        <item>Every Flower That Grows</item>
+        <item>Jesus, Savior, Pilot Me</item>
+        <item>The Lord\'s My Shepherd</item>
+        <item>Jesus, Guide Our Way</item>
+        <item>O Let Me Walk With Thee</item>
+        <item>Shepherd of Tender Youth</item>
+        <item>As Saints of Old</item>
+        <item>Come, Ye Thankful People</item>
+        <item>For the Fruits of His Creation</item>
+        <item>Now Thank We All Our God</item>
+        <item>Let All Things Now Living</item>
+        <item>We Plow the Fields</item>
+        <item>Come, Sing a Song of Harvest</item>
+        <item>Praise and Thanksgiving</item>
+        <item>For Sunrise Hope and Sunset Calm</item>
+        <item>For the Beauty of the Earth</item>
+        <item>Father, We Thank You</item>
+        <item>Have Thine Own Way Lord</item>
+        <item>Make Me a Captive, Lord</item>
+        <item>Pass Me Not, O Gentle Savior</item>
+        <item>Not I, But Christ</item>
+        <item>What Does the Lord Require?</item>
+        <item>Give of Your Best to the Master</item>
+        <item>I\'ll Go Where You Want Me to Go</item>
+        <item>O Master, Let Me Walk With Thee</item>
+        <item>Let Your Heart Be Broken</item>
+        <item>Awake, Awake to Love and Work</item>
+        <item>In the Heart of Jesus</item>
+        <item>So Send I You</item>
+        <item>Tis Love That Makes Us Happy</item>
+        <item>This Little Light of Mine</item>
+        <item>When the Church of Jesus</item>
+        <item>Working, O Christ, With Thee</item>
+        <item>You That Know the Lord</item>
+        <item>There\'s a Spirit in the Air</item>
+        <item>When Christ Was Lifted From the Earth</item>
+        <item>What Joy It Is to Worship Here</item>
+        <item>In Christ There Is No East nor West</item>
+        <item>Lord of All Nations</item>
+        <item>Holy Spirit, Gracious Guest</item>
+        <item>Trust and Obey</item>
+        <item>In Our Work and in Our Play</item>
+        <item>Watchman, Tell Us of the Night</item>
+        <item>In Times Like These</item>
+        <item>Heir of the Kingdom</item>
+        <item>Let Every Lamp Be Burning</item>
+        <item>Look for the Waymarks</item>
+        <item>Ye Servants of the Lord</item>
+        <item>Watch, Ye Saints</item>
+        <item>Rejoice, Rejoice, Believers</item>
+        <item>Hold Fast Till I Come</item>
+        <item>Watchmen, on the Walls of Zion</item>
+        <item>O Brother, Be Faithful</item>
+        <item>Christian, Seek Not Repose</item>
+        <item>We Know Not the Hour</item>
+        <item>My Soul, Be on Thy Guard</item>
+        <item>Once to Every Man and Nation</item>
+        <item>God of Grace and God of Glory</item>
+        <item>Faith Is the Victory</item>
+        <item>Am I a Soldier of the Cross?</item>
+        <item>Stand Like the Brave</item>
+        <item>Awake, My Soul!</item>
+        <item>Onward, Christian Soldiers!</item>
+        <item>Fight the Good Fight</item>
+        <item>Sound the Battle Cry</item>
+        <item>Rise Up, O Church of God</item>
+        <item>Soldiers of Christ, Arise</item>
+        <item>We Are Living, We Are Dwelling</item>
+        <item>Stand Up! Stand Up for Jesus!</item>
+        <item>Lead On, O King Eternal</item>
+        <item>On Jordan\'s Stormy Banks</item>
+        <item>Gracious Father, Guard Thy Children</item>
+        <item>Come, Come, Ye Saints</item>
+        <item>I Will Follow Thee</item>
+        <item>I Want Jesus to Walk With Me</item>
+        <item>Higher Ground</item>
+        <item>In a Little While We\'re Going Home</item>
+        <item>Jacob\'s Ladder</item>
+        <item>As Jacob With Travel Was Weary</item>
+        <item>O Happy Band of Pilgrims</item>
+        <item>Rise, My Soul, and Stretch Thy Wings</item>
+        <item>When on Life a Darkness Falls</item>
+        <item>Until Then</item>
+        <item>When We All Get to Heaven</item>
+        <item>Come, All Christians, Be Committed</item>
+        <item>Lord of All Good</item>
+        <item>God, Whose Giving Knows No Ending</item>
+        <item>Son of God, Eternal Savior</item>
+        <item>The Wise May Bring Their Learning</item>
+        <item>A Diligent and Grateful Heart</item>
+        <item>For Beauty of Meadows</item>
+        <item>God in His Love for Us</item>
+        <item>We Praise Thee With Our Minds</item>
+        <item>Father, Who on Us Do Shower</item>
+        <item>O God, Whose Will Is Life and Good</item>
+        <item>God of Our Fathers</item>
+        <item>To the Name That Brings Salvation</item>
+        <item>Mine Eyes Have Seen the Glory</item>
+        <item>I Vow to Thee, My Country</item>
+        <item>Lord, While for All Mankind We Pray</item>
+        <item>Our Father, by Whose Name</item>
+        <item>Happy the Home That Welcomes You</item>
+        <item>Love at Home</item>
+        <item>Lead Them, My God, to Thee</item>
+        <item>Lord, Bless Our Homes</item>
+        <item>Happy the Home</item>
+        <item>O Perfect Love</item>
+        <item>O God, From Whom Mankind</item>
+        <item>Heavenly Father, Hear Our Prayer</item>
+        <item>May the Grace of Christ Our Savior</item>
+        <item>Glory Be to the Father</item>
+        <item>Holy, Holy, Holy</item>
+        <item>Let All Mortal Flesh Keep Silence</item>
+        <item>Amens</item>
+        <item>Sevenfold Amen</item>
+        <item>All Things Come of Thee</item>
+        <item>Cast Thy Burden Upon the Lord</item>
+        <item>Lord, Bless Thy Word to Every Heart</item>
+        <item>O Thou Who Hearest</item>
+        <item>The Lord Bless You and Keep You</item>
+        <item>We Give Thee But Thine Own</item>
+        <item>As We Come to You in Prayer</item>
+        <item>Spirit of the Living God</item>
+        <item>May God Be With You</item>
+        <item>Shalom</item>
+        <item>May the Lord Bless and Keep You</item>
+        <item>Thy Word Is a Lantern</item>
+        <item>Heavenly Father, to Thee We Pray</item>
+        <item>God Be in My Head</item>
+        <item>God Be in My Head</item>
+        <item>Holy Spirit, Hear Us</item>
+        <item>This Is the Day the Lord Hath Made</item>
+        <item>As You Have Promised, Lord</item>
+        <item>Jesus, Stand Among Us</item>
+        <item>Hear Our Prayer, O Lord</item>
+        <item>Cause Me to Hear</item>
+        <item>Bless Thou the Gifts</item>
+        <item>The Lord Is in His Holy Temple</item>
+        <item>Surely, Surely</item>
+        <item>Day by Day, Dear Lord</item>
+        <item>Dismiss Us, Lord With Blessing</item>
+        <item>Lead Me, Lord</item>
+        <item>The Lord Is in His Holy Temple</item>
+        <item>Almighty Father</item>
+        <item>Praise God, From Whom All Blessings</item>
+        <item>Praise God, From Whom All Blessings</item>
+
     </string-array>
 
     <string name="title_activity_fullscreen">FullscreenActivity</string>

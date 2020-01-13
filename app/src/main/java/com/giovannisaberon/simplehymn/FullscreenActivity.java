@@ -2,11 +2,13 @@ package com.giovannisaberon.simplehymn;
 
 import android.annotation.SuppressLint;
 import android.content.SharedPreferences;
+import android.support.v4.widget.TextViewCompat;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
+import android.util.TypedValue;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.TextView;
@@ -28,8 +30,12 @@ public class FullscreenActivity extends AppCompatActivity{
      * Whether or not the system UI should be auto-hidden after
      * {@link #AUTO_HIDE_DELAY_MILLIS} milliseconds.
      */
-    int verseCount = -1;
+    int verseCount = 0;
+    int fontminsize = 30;
+    int fontmaxsize = 40;
     List<String> verseItem;
+    List<String> refrain = new ArrayList();
+    String refrainOn = "off";
     String verseTitle;
     private SharedPreferences pref;  // 0 - for private mode
     private SharedPreferences.Editor editor;
@@ -37,6 +43,8 @@ public class FullscreenActivity extends AppCompatActivity{
     private static final boolean AUTO_HIDE = true;
     HymnJson hymnJson;
     HashMap<String, ArrayList<List>> hashMapHymns;
+    TextView textView;
+    ArrayList<List> versesListWithRefrains = new ArrayList<>();
     /**
      * If {@link #AUTO_HIDE} is set, the number of milliseconds to wait after
      * user interaction before hiding the system UI.
@@ -119,9 +127,29 @@ public class FullscreenActivity extends AppCompatActivity{
         pref = getApplicationContext().getSharedPreferences("MyPref", 0);
         final int number = pref.getInt("selectedHymnNumber", 0);
         final String title = pref.getString("selectedHymnTitle", null);
-        final TextView textView = (TextView) mContentView;
+        textView = (TextView) mContentView;
         textView.setText(Integer.toString(number) + "\n" + title);
         final ArrayList<List> versesList = hashMapHymns.get(Integer.toString(number));
+        List<String> numbertitle = new ArrayList<>();
+        numbertitle.add(Integer.toString(number));
+        numbertitle.add(title);
+        versesListWithRefrains.add(numbertitle);
+        for (int x=0; x<versesList.size(); x++){
+            verseItem = versesList.get(x);
+            if (verseItem.contains("Refrain")){
+                refrain = verseItem;
+                versesListWithRefrains.add(refrain);
+            }
+            else if (refrain.size()==0){
+                versesListWithRefrains.add(verseItem);
+            } else if (refrain.size()!=0){
+                versesListWithRefrains.add(verseItem);
+                versesListWithRefrains.add(refrain);
+            }
+
+        }
+        verseItem = numbertitle;
+
 
 
         mContentView.setOnTouchListener(new OnSwipeTouchListener(FullscreenActivity.this) {
@@ -132,26 +160,38 @@ public class FullscreenActivity extends AppCompatActivity{
             }
             public void onSwipeRight() {
                 verseCount = verseCount - 1;
+                if (verseCount>versesListWithRefrains.size()){
+                    verseCount = 0;
+                }
                 Toast.makeText(FullscreenActivity.this, Integer.toString(verseCount), Toast.LENGTH_SHORT).show();
 
                 Log.i("verseCount", Integer.toString(verseCount));
-                verseItem = versesList.get(verseCount);
-                verseTitle = verseItem.get(0);
-                String text = verseTitle + "\n\n ";
-                String verseLyrics;
-                for (int i=1; i<verseItem.size(); i++){
-                    verseLyrics = verseItem.get(i) + "\n";
-                    text+= verseLyrics;
+                verseItem = versesListWithRefrains.get(verseCount);
+                if (verseItem!=null){
+                    verseTitle = verseItem.get(0);
+                    String text = verseTitle + "\n\n ";
+                    String verseLyrics;
+                    for (int i=1; i<verseItem.size(); i++){
+                        verseLyrics = verseItem.get(i) + "\n";
+                        text+= verseLyrics;
+                    }
+                    textView.setText(text);
                 }
-                textView.setText(text);
+
+//                TextViewCompat.setAutoSizeTextTypeUniformWithConfiguration(textView, fontminsize, fontmaxsize, 1,
+//                        TypedValue.COMPLEX_UNIT_DIP);
 
 
 
             }
             public void onSwipeLeft() {
                 verseCount = verseCount + 1;
+                if (verseCount>versesListWithRefrains.size()){
+                    verseCount = versesListWithRefrains.size()-1;
+                }
                 Toast.makeText(FullscreenActivity.this, Integer.toString(verseCount), Toast.LENGTH_SHORT).show();
-                verseItem = versesList.get(verseCount);
+                verseItem = versesListWithRefrains.get(verseCount);
+
                 verseTitle = verseItem.get(0);
                 String text = verseTitle + "\n\n ";
                 String verseLyrics;
@@ -161,6 +201,8 @@ public class FullscreenActivity extends AppCompatActivity{
                 }
 
                 textView.setText(text);
+//                TextViewCompat.setAutoSizeTextTypeUniformWithConfiguration(textView, fontminsize, fontmaxsize, 1,
+//                        TypedValue.COMPLEX_UNIT_DIP);
 
 
 
@@ -186,6 +228,18 @@ public class FullscreenActivity extends AppCompatActivity{
         // operations to prevent the jarring behavior of controls going away
         // while interacting with the UI.
         findViewById(R.id.dummy_button).setOnTouchListener(mDelayHideTouchListener);
+    }
+
+    public List<String> getNext(List<String> uid) {
+        int idx = versesListWithRefrains.indexOf(uid);
+        if (idx < 0 || idx+1 == versesListWithRefrains.size()) return null;
+        return versesListWithRefrains.get(idx + 1);
+    }
+
+    public List<String> getPrevious(List<String> uid) {
+        int idx = versesListWithRefrains.indexOf(uid);
+        if (idx <= 0) return null;
+        return  versesListWithRefrains.get(idx - 1);
     }
 
     @Override
