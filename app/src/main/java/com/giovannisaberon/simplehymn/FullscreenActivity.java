@@ -160,6 +160,11 @@ public class FullscreenActivity extends AppCompatActivity{
 
         }
         verseItem = numbertitle;
+        List<String> end = new ArrayList<>();
+        end.add("END");
+        end.add("");
+        versesListWithRefrains.add(end);
+
 
 
 
@@ -174,7 +179,7 @@ public class FullscreenActivity extends AppCompatActivity{
                 if (verseCount<0){
                     verseCount = 0;
                 }
-                Toast.makeText(FullscreenActivity.this, Integer.toString(verseCount), Toast.LENGTH_SHORT).show();
+//                Toast.makeText(FullscreenActivity.this, Integer.toString(verseCount), Toast.LENGTH_SHORT).show();
 
                 Log.i("verseCount", Integer.toString(verseCount));
                 verseItem = versesListWithRefrains.get(verseCount);
@@ -197,10 +202,10 @@ public class FullscreenActivity extends AppCompatActivity{
             }
             public void onSwipeLeft() {
                 verseCount = verseCount + 1;
-                if (verseCount==versesListWithRefrains.size()-1){
-                    verseCount = versesListWithRefrains.size()-1;
+                if (verseCount>=versesListWithRefrains.size()-1){
+                    verseCount = versesListWithRefrains.size()-2;
                 }
-                Toast.makeText(FullscreenActivity.this, Integer.toString(verseCount), Toast.LENGTH_SHORT).show();
+//                Toast.makeText(FullscreenActivity.this, Integer.toString(verseCount), Toast.LENGTH_SHORT).show();
                 verseItem = versesListWithRefrains.get(verseCount);
 
                 verseTitle = verseItem.get(0);
@@ -222,7 +227,7 @@ public class FullscreenActivity extends AppCompatActivity{
 
             }
             public void onSwipeBottom() {
-                Toast.makeText(FullscreenActivity.this, "bottom", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(FullscreenActivity.this, "bottom", Toast.LENGTH_SHORT).show();
                 toggle();
             }
 

@@ -83,7 +83,8 @@ public class HymnListAdapter extends RecyclerView.Adapter<HymnListAdapter.MyView
         // - replace the contents of the view with that element
 
                 String title = hymnListFiltered.get(position);
-                holder.numberTextView.setText(Integer.toString(hymnList.indexOf(title)+1));
+                String number = Integer.toString(hymnList.indexOf(title)+1);
+                holder.numberTextView.setText(number);
                 holder.titleTextView.setText(title);
 
 
@@ -147,15 +148,23 @@ public class HymnListAdapter extends RecyclerView.Adapter<HymnListAdapter.MyView
                     hymnListFiltered = hymnList;
                 } else {
                     List<String> filteredList = new ArrayList<>();
-                    for (String row : hymnList) {
+                    if (isNumeric(charString)){
+                        int key = Integer.parseInt(charString);
+                        String match = hymnList.get(key-1);
+                        filteredList.add(match);
 
-                        // name match condition. this might differ depending on your requirement
-                        // here we are looking for name or phone number match
-                        Log.i("search", charString);
+                    }else {
+                        for (String row : hymnList) {
 
-                        if (row.toLowerCase().contains(charString.toLowerCase())) {
+                            // name match condition. this might differ depending on your requirement
+                            // here we are looking for name or phone number match
+                            Log.i("search", charString);
 
-                            filteredList.add(row);
+                            if (row.toLowerCase().contains(charString.toLowerCase())) {
+
+                                filteredList.add(row);
+                            }
+
                         }
                     }
 
@@ -175,6 +184,18 @@ public class HymnListAdapter extends RecyclerView.Adapter<HymnListAdapter.MyView
                 notifyDataSetChanged();
             }
         };
+    }
+
+    public static boolean isNumeric(String strNum) {
+        if (strNum == null) {
+            return false;
+        }
+        try {
+            double d = Double.parseDouble(strNum);
+        } catch (NumberFormatException nfe) {
+            return false;
+        }
+        return true;
     }
 
     public interface HymnAdapterListener {
