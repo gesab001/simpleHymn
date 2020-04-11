@@ -219,12 +219,6 @@ public class FullscreenActivity extends AppCompatActivity{
                 textView.setText(text);
 //                TextViewCompat.setAutoSizeTextTypeUniformWithConfiguration(textView, fontminsize, fontmaxsize, 1,
 //                        TypedValue.COMPLEX_UNIT_DIP);
-
-
-
-
-
-
             }
             public void onSwipeBottom() {
 //                Toast.makeText(FullscreenActivity.this, "bottom", Toast.LENGTH_SHORT).show();
